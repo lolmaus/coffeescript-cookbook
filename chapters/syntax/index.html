@@ -4,7 +4,7 @@ title: Syntax
 chapter: Syntax
 ---
 
-{% capture url %}/chapters/{{ page.chapter | replace: ' ', '_' | downcase }}{% endcapture %}
+{% capture url %}{{ site.baseurl }}/chapters/{{ page.chapter | replace: ' ', '_' | downcase }}{% endcapture %}
 {% capture indexurl %}{{ url }}/index.html{% endcapture %}
 
 <ul>
