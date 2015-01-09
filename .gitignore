@@ -5,3 +5,8 @@ _site
 *.swo
 
 .DS_Store
+
+
+# IDE
+/*.iml
+/.idea/
