@@ -25,7 +25,7 @@ chapters:
 
   <ol class="navigation chapters-list">
     {% for chapter in page.chapters %}
-      {% capture url %}{{ site.baseurl }}/chapters/{{ chapter | replace: ' ', '_' | downcase }}{% endcapture %}
+      {% capture url %}/chapters/{{ chapter | replace: ' ', '_' | downcase }}{% endcapture %}
       {% capture indexurl %}{{ url }}/index.html{% endcapture %}
       <li class="chapter">
         <h4><a class="chapter-title" href="{{ url }}">{{ chapter }}</a></h4>

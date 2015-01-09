@@ -70,7 +70,7 @@ chapters:
         <h5 class="sidebar-title">Chapters Index</h5>
         <ol class="navigation chapters-list">
           {% for chapter in page.chapters %}
-            {% capture url %}{{ site.baseurl }}/chapters/{{ chapter | replace: ' ', '_' | downcase }}{% endcapture %}
+            {% capture url %}/chapters/{{ chapter | replace: ' ', '_' | downcase }}{% endcapture %}
             {% capture indexurl %}{{ url }}/index.html{% endcapture %}
             <li class="chapter">
               <div class="sidebar-subtitle{% if page.url == indexurl %} page-active{% endif %}"><strong><a class="chapter-title" href="{{ url }}">{{ chapter }}</a></strong></div>
